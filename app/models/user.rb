@@ -3,7 +3,7 @@ class User < ApplicationRecord
 	has_secure_password
   
 	def editor? 
-		self.role == 'editor' || self.role == 'admin'
+		self.role == 'editor'
 		
     end
 	  

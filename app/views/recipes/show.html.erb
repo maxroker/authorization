@@ -12,7 +12,7 @@
     
     <!-- Add links here -->
 
-    <% if current_user && (current_user.editor? || current_user.admin?) %> 
+    <% if current_user && current_user.editor? %> 
       <p class="recipe-edit"> 
         <%= link_to "Edit Recipe", edit_recipe_path(@recipe.id) %> 
       </p> 
